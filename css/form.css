@@ -1,0 +1,153 @@
+
+
+a {
+    text-decoration: none;
+    color: #1ab188;
+    transition: .5s ease;
+}
+a:hover {
+    color: #179b77;
+}
+
+.form {
+    background: rgba(19, 35, 47, 0.9);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.fila{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1.formulario {
+    text-align: center;
+    font-weight: 300;
+    margin: 0 0 20px;
+    color: #dfac6e;
+    font-size: 2.5rem;
+}
+
+.label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(0, 0, 0, 0);
+    transition: all 0.25s ease;
+    pointer-events: none;
+    font-size: 22px;
+}
+.label .req {
+    margin: 12px;
+    color: #1ab188;
+}
+
+.label.active {
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+}
+.label.active .req {
+    opacity: 0;
+}
+
+.label.highlight {
+    color: #ffffff;
+}
+input, textarea, select {
+    font-size: 18px;
+    width: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #ffffff;
+    border-radius: 0;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+select{
+    background-color: #79a398;
+    color: #000000;
+}
+
+input:focus, textarea:focus {
+    outline: 0;
+    border-color: #2fc79e;
+}
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.otrolabel {
+    color: white;
+    margin-right: 20px;
+    width: 30%;
+} 
+
+
+.boton {
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #1ab188;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.fila .boton{
+    width: 40%;
+    margin: 10px auto 0;
+}
+
+.aboton{
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    padding: 10px 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    text-align: center;
+    background: #1ab188;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+    width: 208px;
+    margin: 10px auto;
+    display: block;
+}
+
+.boton:hover, .boton:focus {
+    background: #179b77;
+}
+
+p.pform{
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+.error{
+    color:#ff0000;
+}
+
+.exito{
+    color:#25b93c;
+}
