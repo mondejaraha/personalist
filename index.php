@@ -1,15 +1,10 @@
 <?php 
-ini_set('display_errors', 1);
-
-ini_set('display_startup_errors', 1);
-
-error_reporting(E_ALL);
 
 require_once 'bd.php';
 require_once 'src/generadoresInterfaz.php';
 
 //si no existe la base de datos vamos a la página donde la podemos crear
-/*if (!existeBD('b15_31953594_personalist')) {
+/*if (!existeBD('personalist')) {
     header('Location:arrancar.php');
     die();
 }*/

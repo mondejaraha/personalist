@@ -3,19 +3,14 @@
 require_once 'bd.php';
 require_once 'src/generadoresInterfaz.php';
 
-ini_set('display_errors', 1);
-
-ini_set('display_startup_errors', 1);
-
-error_reporting(E_ALL);
-
-if (existeBD('b15_31953594_personalist')) {
+if (existeBD('personalist')) {
     //header('Location:index.php');
     //die();
 }
 else{
     //creamos todas las tablas
-    inicializarBD2();
+    inicializarBD();
+    
     header('Location:index.php');
     die();
 }
@@ -100,7 +95,7 @@ else{
 
             <h1 class="m-3 titulo-main">NO HAY BASE DE DATOS, ¡HAY QUE CREARLA! </h1>
 
-            <form action="src/generarbd.php" method="POST">
+            <form action="src/generarBD.php" method="POST">
                 <button id="cargarBT" type="submit" class="boton">GENERAR BASE DE DATOS</button>
                 <input type="hidden" name="generar" value="true"/>
             </form>
